@@ -1,0 +1,21 @@
+type = "card"
+title = "Work Highlights"
+description = "Selected highlights from enterprise AI research and deployment."
+
+[[items]]
+title = "Enterprise NL2SQL and Agentic Data Systems"
+subtitle = "Oracle AI (OCI)"
+date = "Current"
+content = "Built production-grade systems connecting large language models with enterprise data and tools, with focus on reliability and evaluation."
+
+[[items]]
+title = "Agent Development, Evaluation, and Data Generation"
+subtitle = "Oracle AI (OCI)"
+date = "Current"
+content = "Worked across end-to-end agent lifecycle including development, evaluation, and high-quality data generation for enterprise use cases."
+
+[[items]]
+title = "Clinical-Driven AI in Healthcare and Pharma"
+subtitle = "IBM"
+date = "Previous"
+content = "I worked with clients in the healthcare and pharmaceutical industry to solve business and product problems and maximize value by defining project scope and approach, developing proof-of-concept solutions, and delivering scalable end-to-end implementations across big data, machine learning pipelines, and analytics. I also led storytelling and presentations to support informed, data-driven decision-making and strengthen value delivered through IBM solutions."

@@ -1,0 +1,57 @@
+[site]
+title = "Marianne Menglin Liu"
+description = "Principal Applied Scientist on the Generative AI Science team at Oracle AI (OCI), focused on NL2SQL, agentic reasoning, and data-centric AI."
+favicon = "/favicon.svg"
+last_updated = "April 13, 2026"
+
+[author]
+name = "Marianne Menglin Liu (刘梦林)"
+title = "Principal Applied Scientist"
+institution = "Oracle AI (OCI), Generative AI Science Team"
+avatar = "/bio.jpg"
+
+[social]
+email = "mmarianneliu@gmail.com"
+google_scholar = "https://scholar.google.com/citations?user=CS7_P8MAAAAJ&hl=en"
+github = "https://github.com/mmarianneliu"
+linkedin = "https://www.linkedin.com/in/menglinliu/"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+
+[i18n.labels]
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Work Highlights"
+type = "page"
+target = "services"
+href = "/services"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"

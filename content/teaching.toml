@@ -1,0 +1,9 @@
+type = "card"
+title = "Teaching"
+description = "Teaching and mentoring activities."
+
+[[items]]
+title = "Mentoring"
+subtitle = "AI and Data Systems"
+date = "Current"
+content = "Mentoring and knowledge-sharing in practical enterprise AI system development."

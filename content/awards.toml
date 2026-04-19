@@ -1,0 +1,9 @@
+type = "card"
+title = "Awards"
+description = "Selected recognitions."
+
+[[items]]
+title = "NL2SQL Archer Challenge Winner (Team)"
+subtitle = "Oracle AI (OCI)"
+date = "2025"
+content = "Part of the Oracle team that won the NL2SQL Archer Challenge."

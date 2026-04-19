@@ -1,0 +1,15 @@
+[[news]]
+date = "Apr 2026"
+content = "My papers ToolScope and LAD-RAG were accepted to the ACL Main Conference 2026."
+[[news.links]]
+label = "ToolScope (arXiv)"
+href = "https://arxiv.org/abs/2510.20036"
+[[news.links]]
+label = "LAD-RAG (arXiv)"
+href = "https://arxiv.org/abs/2510.07233"
+
+[[news]]
+date = "2025-10"
+content = "#1 overall on the bilingual leaderboard in the 2025 Archer NL2SQL Challenge; I represented Oracle and collaborated with Ashish Somayajula to deliver +6.3 points in English and +12.6 points in Chinese over the runner-up, while maintaining over 99% SQL validity."
+link = "https://blogs.oracle.com/cloud-infrastructure/oracle-wins-archer-nl2sql-challenge"
+link_label = "Oracle announcement"

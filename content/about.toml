@@ -1,0 +1,22 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Natural Language to SQL (NL2SQL)",
+  "Agentic Reasoning for Enterprise AI",
+  "Data-Centric AI and Evaluation",
+  "Reliable Production AI Systems"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "news"
+type = "list"
+title = "News"
+source = "news.toml"
