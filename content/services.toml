@@ -5,7 +5,7 @@ description = "Selected highlights from enterprise AI research and deployment."
 [[items]]
 title = "Enterprise NL2SQL System"
 subtitle = "Oracle AI (OCI)"
-date = "Current"
+date = "2025-Current"
 content = """
 - Led the development of SOMA-SQL, a generalizable enterprise NL2SQL system that resolves ambiguity across user intent, schema context, and execution feedback through planning, probing, and iterative refinement.
 - Built agentic enterprise NL2SQL systems in production to support robust, cross-dialect SQL execution for real-world enterprise workflows.
@@ -16,7 +16,7 @@ tags = ["NL2SQL", "Semantic Modeling", "Database Enrichment", "LLM Agents"]
 [[items]]
 title = "LLM Evaluation Frameworks and Benchmarking"
 subtitle = "Oracle AI (OCI)"
-date = "2023-2024"
+date = "2024-2025"
 content = """
 - Led the development of a streamlined, reproducible LLM evaluation harness across multiple domains (Agent, Multilingual, NL2SQL, Code, Responsible AI, Internal), with standardized logging/tracking and confidence-aware reporting for leadership model-release decisions.
 - Built Oracle Fusion Agent evaluation frameworks for tool-level and end-to-end benchmarking of internal employee-assistance use cases (for example, benefits analysis and account advisory).
@@ -27,7 +27,7 @@ tags = ["LLM Evaluation", "RAG", "Agent Evaluation", "Multilingual", "Multimodal
 [[items]]
 title = "Synthetic Data Generation (SDG)"
 subtitle = "Oracle AI (OCI)"
-date = "2022-2023"
+date = "2023-2024"
 content = """
 - Led the team to deliver synthetic data generation across text, image, and audio for internal ML service fine-tuning and evaluation, and drove customer-facing PoCs across OCI teams (Language, Speech, GenAI, CX, Utilities), enabling broad internal adoption and substantial cost savings.
 - Delivered SDG Service V1 and built the end-to-end SDG platform (libraries, config/evaluation pipelines, and APIs) to improve scalability, quality, and reproducibility.
