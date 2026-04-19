@@ -3,19 +3,57 @@ title = "Work Highlights"
 description = "Selected highlights from enterprise AI research and deployment."
 
 [[items]]
-title = "Enterprise NL2SQL and Agentic Data Systems"
+title = "Enterprise NL2SQL System"
 subtitle = "Oracle AI (OCI)"
 date = "Current"
-content = "Built production-grade systems connecting large language models with enterprise data and tools, with focus on reliability and evaluation."
+content = """
+- Led the development of SOMA-SQL, a generalizable enterprise NL2SQL system that resolves ambiguity across user intent, schema context, and execution feedback through planning, probing, and iterative refinement.
+- Built agentic enterprise NL2SQL systems in production to support robust, cross-dialect SQL execution for real-world enterprise workflows.
+- Achieved #1 results on bilingual NL2SQL benchmarks, including Archer and Spider 2.0 Lite.
+"""
+tags = ["NL2SQL", "Semantic Modeling", "Database Enrichment", "LLM Agents"]
 
 [[items]]
-title = "Agent Development, Evaluation, and Data Generation"
+title = "LLM Evaluation Frameworks and Benchmarking"
 subtitle = "Oracle AI (OCI)"
-date = "Current"
-content = "Worked across end-to-end agent lifecycle including development, evaluation, and high-quality data generation for enterprise use cases."
+date = "2023-2024"
+content = """
+- Led the development of a streamlined, reproducible LLM evaluation harness across multiple domains (Agent, Multilingual, NL2SQL, Code, Responsible AI, Internal), with standardized logging/tracking and confidence-aware reporting for leadership model-release decisions.
+- Built Oracle Fusion Agent evaluation frameworks for tool-level and end-to-end benchmarking of internal employee-assistance use cases (for example, benefits analysis and account advisory).
+- Built open-source and in-house RAG benchmarking pipelines and evaluation plans for RAG/Agent services, delivered multimodal RAG PoCs (vision embeddings + multimodal models), curated benchmark datasets, and supported partner RAG evaluation for product integration decisions.
+"""
+tags = ["LLM Evaluation", "RAG", "Agent Evaluation", "Multilingual", "Multimodal"]
+
+[[items]]
+title = "Synthetic Data Generation (SDG)"
+subtitle = "Oracle AI (OCI)"
+date = "2022-2023"
+content = """
+- Led the team to deliver synthetic data generation across text, image, and audio for internal ML service fine-tuning and evaluation, and drove customer-facing PoCs across OCI teams (Language, Speech, GenAI, CX, Utilities), enabling broad internal adoption and substantial cost savings.
+- Delivered SDG Service V1 and built the end-to-end SDG platform (libraries, config/evaluation pipelines, and APIs) to improve scalability, quality, and reproducibility.
+- Led collaboration with multilingual linguists to establish human-in-the-loop (HIL) synthetic data validation and review workflows.
+"""
+tags = ["Synthetic Data Generation", "Multimodal", "Multilingual", "LLM", "HIL"]
+
+[[items]]
+title = "Anomaly Detection Services on OCI"
+subtitle = "Oracle Cloud Infrastructure (OCI) AI Services"
+date = "2021-2023"
+content = """
+- Led development, multiple releases, and launch of OCI anomaly detection production service, including deep-learning capabilities for pure univariate, univariate+categorical, and discrete univariate signals.
+- Built core preprocessing, training, and inference pipelines that became shared service infrastructure for extensibility and faster iteration across kernels.
+- Built a graph-based anomaly detection and forecasting solution for Danish power plants on OCI Anomaly Detection, enabling earlier breakdown alerts and ~30% higher operational efficiency.
+- Prototyped non-time-series anomaly detection for financial transaction and SaaS report analysis using dimensionality reduction and reconstruction-based modeling.
+"""
+tags = ["Anomaly Detection", "Time Series Forecasting", "Graph ML", "Deep Learning", "Production ML"]
 
 [[items]]
 title = "Clinical-Driven AI in Healthcare and Pharma"
 subtitle = "IBM"
-date = "Previous"
-content = "I worked with clients in the healthcare and pharmaceutical industry to solve business and product problems and maximize value by defining project scope and approach, developing proof-of-concept solutions, and delivering scalable end-to-end implementations across big data, machine learning pipelines, and analytics. I also led storytelling and presentations to support informed, data-driven decision-making and strengthen value delivered through IBM solutions."
+date = "2019-2021"
+content = """
+- Led healthcare AI projects end-to-end, from solution design to production deployment, for healthcare-sector customers across insurance, legal, and compliance functions.
+- Delivered pre-authorization automation for bariatric, infertility, and spine surgery review for a major U.S. health insurance company, improving turnaround speed and generating multi-million-dollar annual savings.
+- Built NLP and anomaly-detection systems with scalable cloud architectures and analytics dashboards for multiple healthcare corporations, including medical-device companies, to support operational decision-making.
+"""
+tags = ["Healthcare AI", "NLP", "Anomaly Detection", "MLOps"]

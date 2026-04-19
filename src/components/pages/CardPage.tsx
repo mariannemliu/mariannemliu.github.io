@@ -67,6 +67,15 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                         {item.subtitle && (
                             <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-3`}>{item.subtitle}</p>
                         )}
+                        {item.tags && (
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {item.tags.map(tag => (
+                                    <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
                         {item.content && (
                             <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
                                 <ReactMarkdown components={markdownComponents}>
@@ -74,13 +83,14 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                 </ReactMarkdown>
                             </div>
                         )}
-                        {item.tags && (
-                            <div className="flex flex-wrap gap-2 mt-4">
-                                {item.tags.map(tag => (
-                                    <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
-                                        {tag}
-                                    </span>
-                                ))}
+                        {item.image && (
+                            <div className="mt-4">
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="w-full rounded-lg border border-neutral-200 dark:border-neutral-800"
+                                    loading="lazy"
+                                />
                             </div>
                         )}
                     </motion.div>

@@ -3,7 +3,15 @@ title = "Awards"
 description = "Selected recognitions."
 
 [[items]]
-title = "NL2SQL Archer Challenge Winner (Team)"
+title = "Spider 2.0 Lite Leaderboard #1 (SOMA-SQL)"
 subtitle = "Oracle AI (OCI)"
-date = "2025"
-content = "Part of the Oracle team that won the NL2SQL Archer Challenge."
+date = "Apr 2026"
+content = "Our solution SOMA-SQL reached #1 on the Spider 2.0 Lite leaderboard with 72.02% accuracy. Detailed blog and paper coming soon.\n\n[Spider 2.0 Lite leaderboard](https://spider2-sql.github.io/)"
+image = "/awards/spider2-lite-soma-sql.png"
+
+[[items]]
+title = "NL2SQL Archer Challenge #1 (OraPlan-SQL)"
+subtitle = "Oracle AI (OCI)"
+date = "Oct 2025"
+content = "Our team reached #1 in the Archer NL2SQL Challenge, a bilingual, reasoning-focused NL2SQL benchmark. [Detailed Oracle blog](https://blogs.oracle.com/cloud-infrastructure/oracle-wins-archer-nl2sql-challenge). [OraPlan-SQL paper](https://arxiv.org/abs/2510.23870).\n\n[Archer NL2SQL leaderboard](https://sig4kg.github.io/archer-bench/)"
+image = "/awards/archer-oraplan-sql.png"
