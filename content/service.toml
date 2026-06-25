@@ -1,0 +1,17 @@
+type = "card"
+title = "Service"
+description = "Selected academic and professional service."
+
+[[items]]
+title = "Reviewer"
+subtitle = "NeurIPS"
+date = "2026"
+content = "Reviewed submissions for the Neural Information Processing Systems conference."
+tags = ["Conference Review", "Machine Learning"]
+
+[[items]]
+title = "Reviewer"
+subtitle = "EACL Student Research Workshop"
+date = "2025"
+content = "Reviewed submissions for the EACL Student Research Workshop."
+tags = ["Workshop Review", "NLP"]

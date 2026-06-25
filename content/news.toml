@@ -1,6 +1,9 @@
 [[news]]
 date = "Apr 2026"
-content = "Our solution SOMA-SQL reached #1 on the Spider 2.0 Lite leaderboard with 72.02% accuracy. Detailed blog and paper coming soon."
+content = "We released the SOMA-SQL paper on arXiv. SOMA-SQL reached #1 on the Spider 2.0 Lite leaderboard with 72.02% accuracy."
+[[news.links]]
+label = "SOMA-SQL paper (arXiv)"
+href = "https://arxiv.org/abs/2606.11424"
 [[news.links]]
 label = "Spider 2.0 Lite leaderboard"
 href = "https://spider2-sql.github.io/"
