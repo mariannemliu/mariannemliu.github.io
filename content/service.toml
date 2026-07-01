@@ -4,6 +4,13 @@ description = "Selected academic and professional service."
 
 [[items]]
 title = "Reviewer"
+subtitle = "EMNLP"
+date = "2026"
+content = "Reviewed submissions for the Empirical Methods in Natural Language Processing conference."
+tags = ["Conference Review", "NLP"]
+
+[[items]]
+title = "Reviewer"
 subtitle = "NeurIPS"
 date = "2026"
 content = "Reviewed submissions for the Neural Information Processing Systems conference."
