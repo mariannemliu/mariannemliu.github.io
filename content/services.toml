@@ -3,15 +3,23 @@ title = "Work Highlights"
 description = "Selected highlights from enterprise AI research and deployment."
 
 [[items]]
-title = "Enterprise NL2SQL System"
+title = "Enterprise Data Agent"
 subtitle = "Oracle AI (OCI)"
 date = "2025-Current"
 content = """
+**Enterprise NL2SQL Agent**
+
 - Led the development of SOMA-SQL, a generalizable enterprise NL2SQL system that resolves ambiguity across user intent, schema context, and execution feedback through planning, probing, and iterative refinement.
-- Built agentic enterprise NL2SQL systems in production to support robust, cross-dialect SQL execution for real-world enterprise workflows.
+- Built production agentic NL2SQL systems for robust, cross-dialect SQL execution across enterprise workflows.
 - Achieved #1 results on bilingual NL2SQL benchmarks, including Archer and Spider 2.0 Lite.
+
+**Proactive Insight Discovery for DevOps**
+
+- Developing a proactive insight layer for SRE agents that correlates operational signals and service dependencies to surface emerging incidents before formal ticket creation.
+- Helps on-call engineers triage and resolve tickets faster by identifying likely duplicate or downstream dependency incidents, reusing relevant investigation context, and estimating potential impact.
+- Extends reactive incident analysis with evidence-grounded operational reasoning to support more reliable root-cause investigation and incident response.
 """
-tags = ["NL2SQL", "Semantic Modeling", "Database Enrichment", "LLM Agents"]
+tags = ["NL2SQL", "Enterprise Data Systems", "SRE Agents", "Proactive Insights", "LLM Agents"]
 
 [[items]]
 title = "LLM Evaluation Frameworks and Benchmarking"
