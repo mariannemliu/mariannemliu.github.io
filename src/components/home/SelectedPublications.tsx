@@ -52,10 +52,16 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                     {author.isCorresponding && (
                                         <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-500'}`}>†</sup>
                                     )}
+                                    {author.isCoAuthor && (
+                                        <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-500'}`}>‡</sup>
+                                    )}
                                     {idx < pub.authors.length - 1 && ', '}
                                 </span>
                             ))}
                         </p>
+                        {pub.authors.some(author => author.isCoAuthor) && (
+                            <p className="text-xs text-neutral-500 dark:text-neutral-500 -mt-1 mb-2">‡ Equal contribution</p>
+                        )}
                         <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-2">
                             {pub.journal || pub.conference}
                         </p>

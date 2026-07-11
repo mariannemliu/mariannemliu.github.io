@@ -6,6 +6,7 @@
   month        = oct,
   eprint       = {2511.09373},
   archivePrefix= {arXiv},
+  sort_order   = {3},
   selected     = {true},
   description  = {Concept-based LLM routing for software tasks with faithful and intervenable decision rationales.}
 }
@@ -24,6 +25,7 @@
   pages        = {34095--34119},
   isbn         = {979-8-89176-390-6},
   abstract     = {Large language model (LLM) agents rely on external tools to solve complex tasks, but real-world toolsets often contain redundant tools with overlapping names and descriptions, introducing ambiguity and reducing selection accuracy. LLMs also face strict input context limits, preventing efficient consideration of large toolsets. To address these challenges, we propose ToolScope, which includes: (1) ToolScopeMerger with Auto-Correction to automatically audit and fix tool merges, reducing redundancy, and (2) ToolScopeRetriever to rank and select only the most relevant tools for each query, compressing toolsets to fit within context limits without sacrificing accuracy. Evaluations on three state-of-the-art LLMs and three open-source tool-use benchmarks show gains of 8.38{\%} to 38.6{\%} in tool selection accuracy, demonstrating ToolScope{'}s effectiveness in enhancing LLM tool use.},
+  sort_order   = {1},
   selected     = {true},
   description  = {Improves LLM tool-use by automatic tool merging and context-aware tool filtering.}
 }
@@ -35,6 +37,7 @@
   year         = {2026},
   eprint       = {2606.11424},
   archivePrefix= {arXiv},
+  equal_contribution = {Sai Ashish Somayajula; Marianne Menglin Liu},
   selected     = {true},
   description  = {Resolves multi-source ambiguity in NL-to-SQL using synthetic logs and execution probing.}
 }
@@ -49,6 +52,7 @@
   month        = oct,
   eprint       = {2510.23870},
   archivePrefix= {arXiv},
+  equal_contribution = {Marianne Menglin Liu; Sai Ashish Somayajula},
   selected     = {true},
   description  = {Planning-centric NL2SQL system that ranked first in the Archer NL2SQL Evaluation Challenge 2025.}
 }
@@ -67,6 +71,7 @@
   pages        = {15945--15968},
   isbn         = {979-8-89176-390-6},
   abstract     = {Question answering over visually rich documents (VRDs) requires reasoning not only over isolated content but also over documents' structural organization and cross-page dependencies. However, conventional retrieval-augmented generation (RAG) methods encode content in isolated chunks during ingestion, losing structural and cross-page dependencies, and retrieve a fixed number of pages at inference, regardless of the specific demands of the question or context. This often results in incomplete evidence retrieval and degraded answer quality for multi-page reasoning tasks. To address these limitations, we propose LAD-RAG, a novel Layout-Aware Dynamic RAG framework. During ingestion, LAD-RAG constructs a symbolic document graph that captures layout structure and cross-page dependencies, adding it alongside standard neural embeddings to yield a more holistic representation of the document. During inference, an LLM agent dynamically interacts with the neural and symbolic indices to adaptively retrieve the necessary evidence based on the query. Experiments on MMLongBench-Doc, LongDocURL, DUDE, and MP-DocVQA demonstrate that LAD-RAG improves retrieval, achieving over 90{\%} perfect recall on average without any top-$k$ tuning, and outperforming baseline retrievers by up to 20{\%} in recall at comparable noise levels, yielding higher QA accuracy with minimal latency.},
+  sort_order   = {2},
   selected     = {true},
   description  = {Layout-aware dynamic retrieval framework for multi-page visually rich document QA.}
 }

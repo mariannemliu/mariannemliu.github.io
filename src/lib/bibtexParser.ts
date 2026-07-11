@@ -43,7 +43,11 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
     const tags = entry.entryTags;
 
     // Parse authors
-    const authors = parseAuthors(tags.author || '', highlightNames);
+    const equalContributionNames = cleanBibTeXString(tags.equal_contribution || tags.equalContribution)
+      .split(';')
+      .map(name => name.trim())
+      .filter(Boolean);
+    const authors = parseAuthors(tags.author || '', highlightNames, equalContributionNames);
 
     // Parse year and month
     const year = parseInt(tags.year) || new Date().getFullYear();
@@ -83,6 +87,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       authors,
       year,
       month: monthMapping[tags.month?.toLowerCase()] ? String(month) : tags.month,
+      sortOrder: parseInt(tags.sort_order || tags.sortOrder) || undefined,
       type,
       status: 'published',
       tags: keywords,
@@ -105,7 +110,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'sort_order', 'equal_contribution']),
     };
 
     // Clean up undefined fields
@@ -117,6 +122,10 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
 
     return publication;
   }).sort((a: Publication, b: Publication) => {
+    if (a.sortOrder !== undefined || b.sortOrder !== undefined) {
+      return (a.sortOrder ?? Number.POSITIVE_INFINITY) - (b.sortOrder ?? Number.POSITIVE_INFINITY);
+    }
+
     // Sort by year (descending), then by month if available
     if (b.year !== a.year) return b.year - a.year;
 
@@ -206,7 +215,7 @@ function buildNameVariants(name: string): Set<string> {
   return variants;
 }
 
-function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean }> {
+function parseAuthors(authorsStr: string, highlightNames: string[], equalContributionNames: string[] = []): Array<{ name: string; isHighlighted?: boolean; isCorresponding?: boolean; isCoAuthor?: boolean }> {
   if (!authorsStr) return [];
 
   const highlightTextCandidates = new Set<string>();
@@ -222,6 +231,9 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
 
   const highlightTextList = Array.from(highlightTextCandidates);
   const highlightNormalizedList = Array.from(highlightNormalizedCandidates);
+  const equalContributionNormalized = new Set(
+    equalContributionNames.map(normalizePersonNameForMatch)
+  );
 
   // Split by "and" and clean up
   return authorsStr
@@ -233,8 +245,8 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       // Check for corresponding author marker
       const isCorresponding = name.includes('*');
 
-      // Check for co-author marker (#)
-      const isCoAuthor = name.includes('#');
+      // Check for equal-contribution marker (#) or configured equal contributors.
+      const hasCoAuthorMarker = name.includes('#');
 
       // Remove special markers from name
       name = name.replace(/[*#]/g, '');
@@ -246,6 +258,7 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       }
 
       name = cleanBibTeXString(name);
+      const isCoAuthor = hasCoAuthorMarker || equalContributionNormalized.has(normalizePersonNameForMatch(name));
 
       // Check if this is the site owner (to highlight)
       const lowerName = name.toLowerCase();

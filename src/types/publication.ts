@@ -21,6 +21,7 @@ export interface Publication {
   pages?: string;
   year: number;
   month?: string;
+  sortOrder?: number;
   publishedDate?: string;
   doi?: string;
   arxivId?: string;
@@ -77,4 +78,3 @@ export type ResearchArea =
   | 'transformer-architectures'
   | 'biomedical-engineering'
   | 'other';
-
