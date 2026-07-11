@@ -198,13 +198,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                             transition={{ duration: 0.4, delay: 0.1 * index }}
                             className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
                         >
-                            {/*
-                              Prefer linking titles to arXiv when available so references are immediately accessible.
-                            */}
                             {(() => {
                                 const arxivHref = pub.arxivId
                                     ? `https://arxiv.org/abs/${pub.arxivId}`
                                     : (pub.url && pub.url.includes('arxiv.org') ? pub.url : null);
+                                const publicationHref = pub.url || arxivHref;
 
                                 return (
                             <div className="flex flex-col md:flex-row gap-6">
@@ -223,9 +221,9 @@ export default function PublicationsList({ config, publications, embedded = fals
                                 )}
                                 <div className="flex-grow">
                                     <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
-                                        {arxivHref ? (
+                                        {publicationHref ? (
                                             <a
-                                                href={arxivHref}
+                                                href={publicationHref}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="hover:text-accent transition-colors"
@@ -268,6 +266,16 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
                                             >
                                                 arXiv
+                                            </a>
+                                        )}
+                                        {publicationHref && !arxivHref && (
+                                            <a
+                                                href={publicationHref}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                            >
+                                                Paper
                                             </a>
                                         )}
                                         {pub.doi && (

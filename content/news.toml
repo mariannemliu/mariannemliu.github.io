@@ -1,4 +1,11 @@
 [[news]]
+date = "Jul 2026"
+content = "My paper, *Routesplain: Towards Faithful and Intervenable Routing for Software-Related Tasks*, was accepted to the 3rd Conference on Language Modeling (COLM 2026)."
+[[news.links]]
+label = "Routesplain (arXiv)"
+href = "https://arxiv.org/abs/2511.09373"
+
+[[news]]
 date = "Apr 2026"
 content = "We released the SOMA-SQL paper on arXiv. SOMA-SQL reached #1 on the Spider 2.0 Lite leaderboard with 72.02% accuracy."
 [[news.links]]
@@ -12,11 +19,11 @@ href = "https://spider2-sql.github.io/"
 date = "Apr 2026"
 content = "My papers ToolScope and LAD-RAG were accepted to the ACL Main Conference 2026."
 [[news.links]]
-label = "ToolScope (arXiv)"
-href = "https://arxiv.org/abs/2510.20036"
+label = "ToolScope (ACL Anthology)"
+href = "https://aclanthology.org/2026.acl-long.1573/"
 [[news.links]]
-label = "LAD-RAG (arXiv)"
-href = "https://arxiv.org/abs/2510.07233"
+label = "LAD-RAG (ACL Anthology)"
+href = "https://aclanthology.org/2026.acl-long.724/"
 
 [[news]]
 date = "Oct 2025"
