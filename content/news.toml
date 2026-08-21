@@ -1,4 +1,11 @@
 [[news]]
+date = "Aug 2026"
+content = "*PLSQLBench: Benchmarking LLM Systems for Executable Procedural Database Programming* has been accepted to the EMNLP 2026 Industry Track."
+[[news.links]]
+label = "PLSQLBench (arXiv)"
+href = "https://arxiv.org/abs/2608.15931"
+
+[[news]]
 date = "Jul 2026"
 content = "My paper, *Routesplain: Towards Faithful and Intervenable Routing for Software-Related Tasks*, was accepted to the 3rd Conference on Language Modeling (COLM 2026)."
 [[news.links]]
